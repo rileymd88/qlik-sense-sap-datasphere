@@ -1,6 +1,6 @@
-## Connecting Click Sense to SAP DataSphere
+## Connecting Qlik Sense to SAP DataSphere
 
-This guide outlines the steps to connect Click Sense to SAP DataSphere using OAuth. 
+This guide outlines the steps to connect Qlik Sense to SAP DataSphere using OAuth. 
 
 ### Step 1: Create an OAuth Client
 
