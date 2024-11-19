@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "b639aa32-a8d9-49c7-8e70-40a7aa20a665",
+		"name": "SAP Datasphere",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4097249"
+	},
+	"item": [
+		{
+			"name": "Get token",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "YOUR_SECRET",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "YOUR_CLIENT_ID",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "response_type",
+							"value": "token",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "INSERT_YOUR_CODE_HERE",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://gpopsc-dwchc.authentication.eu10.hana.ondemand.com/oauth/token",
+					"protocol": "https",
+					"host": [
+						"gpopsc-dwchc",
+						"authentication",
+						"eu10",
+						"hana",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
